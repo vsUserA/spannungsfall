@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="main">
+        <div class="main-zeile1">
+            <div class="spannung">
+                <p>Nennspannung (Un)</p>
+                <input id="iSpannung" type="text" value="230" onchange="spannung()">
+            </div>
+            <div class="sicherung">
+                <p>Nennstrom</p>
+                <input id="iSicherung" type="text" value="16" onchange="sicherung()">
+            </div>
+            <div class="leitungslaenge">
+                <p>Leitungslänge</p>
+                <input id="iKabellaenge" type="text"  value="10" onchange="laenge()">
+            </div>
+            <div class="cosinus">
+                <p>cosinus</p>
+                <input id="iCosinus" type="text" value="1" onchange="cosinus()">
+            </div>
+            <div class="spannungsfall">
+                <p>spannungsfall, in %</p>
+                <input id="iSpannungsfall" type="text" value="3" onchange="laenge()">
+            </div>
+        </div>
+        <div class="main-zeile2">
+            <div class="querschnitt">
+                <p>Berechneter Querschnitt (mm²)</p>
+                <input id="iQuerschnitt" type="text" placeholder="Querschnitt in mm²" readonly>
+            </div>
+            <div class="stromart">
+                <p>Drehstrom | Wechselstrom | Gleichstromsart</p>
+                <div class="stromart-radio">
+                    <input type="radio" name="stromartRadio" id="DS" value="0" checked onchange="spannung()">
+                    <input type="radio" name="stromartRadio" id="WS" value="1" onchange="spannung()">
+                    <input type="radio" name="stromartRadio" id="GS" value="2" onchange="spannung()">
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <footer>
+
+    </footer>
+    
+</body>
+<script src="./js/main.js"></script>
+</html>
