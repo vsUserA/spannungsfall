@@ -1,0 +1,81 @@
+body{
+    
+}
+.main{
+    background-color: brown;
+    width:920px;
+    align-items: center;
+    justify-content: center;
+}
+/*#### Zeile 1 ####*/
+.main-zeile1{
+    display: flex;
+    gap:10px;
+    flex:900px;
+    border: 2px solid;
+    width: 900px;
+    
+}
+
+.spannung{
+    flex:auto;
+    background-color: gray;
+    padding:5px;
+    border: 2px solid red;
+    
+}
+.spannung input{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5%;
+}
+.sicherung{
+    flex:auto;
+    border: 2px solid yellowgreen;
+    background-color: aqua;
+    margin: 10px;
+}
+.leitungslaenge{
+    flex:auto;
+    margin: 10px;
+    background-color: aqua;
+}
+.cosinus{
+    flex:auto;
+    margin: 10px;
+    background-color: aqua;
+}
+.spannungsfall{
+    flex:auto;
+    margin: 10px;
+    background-color: aqua;
+    border: 2px solid blue;
+}
+
+
+/*#### Zeile 2 ####*/
+.main-zeile2{
+    display: flex;
+    gap:10px;
+    flex:900px;
+    border: 2px solid;
+    width: 900px;
+    
+}
+.querschnitt{
+    flex:auto;
+    margin: 10px;
+    background-color: aqua;
+    border: 2px solid blue;
+}
+.stromart{
+    flex:auto;
+    margin: 10px;
+    background-color: aqua;
+    border: 2px solid blue;
+    width: 100px;
+}
+.stromart-radio input{
+    margin: 20px 40px;
+}
